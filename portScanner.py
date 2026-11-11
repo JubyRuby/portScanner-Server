@@ -7,7 +7,7 @@ target= "127.0.0.1"
 def portScan(port):
     try:
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM) #uses tcp instead of udp
-        #target
+        #target connection
         sock.connect((target, port))
         return True
     except:
